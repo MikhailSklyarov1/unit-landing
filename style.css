@@ -1,4 +1,16 @@
-.main {
-    color: bisque;
-    background-color: yellowgreen;
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: black;
+    height: 2.2rem;
+    display: flex;
+    justify-content: end;
+}
+
+.ref {
+    color: white;
+    padding-top: 0.4rem;
+    margin-right: 1.5rem;
 }
