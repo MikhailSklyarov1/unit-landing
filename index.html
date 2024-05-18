@@ -1,89 +1,105 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Обучающий Центр Юнит</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo"></div>
-        <div class="burger-container">
-          <div class="burger" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-        </div>
-        <ul id="nav-links">
-          <li><a href="#program">Программа</a></li>
-          <li><a href="#prices">Цены</a></li>
-          <li><a href="#locations">Адреса Центров</a></li>
-          <li><a href="#contact">Контакты</a></li>
-          <li><a href="#news">Новости</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="hero-section">
-      <div class="overlay">
-        <div class="content">
-            <img src="logo.png" alt="Logo" class="logo">
-          <h1>Обучающий Центр Юнит</h1>
-          <p>Программа дополнительного образования для школьников от 7 лет</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://api-maps.yandex.ru/v3/?apikey=7a33ccdb-a504-4f2b-bad9-bf4d85914812&lang=ru_RU"></script>
+  <title>Обучающий Центр Юнит</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>  
+  <header>
+    <nav>
+      <div class="logo"></div>
+      <div class="burger-container">
+        <div class="burger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
       </div>
+      <ul id="nav-links">
+        <li><a href="#program">Программа</a></li>
+        <li><a href="#prices">Цены</a></li>
+        <li><a href="#locations">Адреса Центров</a></li>
+        <li><a href="#contact">Контакты</a></li>
+        <li><a href="#news">Новости</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hero-section">
+    <div class="overlay">
+      <div class="content">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Обучающий Центр Юнит</h1>
+        <p>Программа дополнительного образования для школьников от 7 лет</p>
+      </div>
     </div>
-    <div class="main-content">
-      <h2 id="program">Программирование для детей</h2>
-      <p>Обучающий центр на базе ВолгГТУ.</p>
-      <p>
-        Мы проводим занятия один раз в неделю по выходным с октября по апрель.
-      </p>
-      <p>Для школьников с 3 по 10 класс</p>
-      <button>Открыта запись</button>
+  </div>
+  <div class="main-content">
+    <h2 id="program">Программирование для детей</h2>
+    <p>Обучающий центр на базе ВолгГТУ.</p>
+    <p>
+      Мы проводим занятия один раз в неделю по выходным с октября по апрель.
+    </p>
+    <p>Для школьников с 3 по 10 класс</p>
+    <button>Открыта запись</button>
 
-      <h2 id="program">Программирование для детей</h2>
-      <p>Обучающий центр на базе ВолгГТУ.</p>
-      <p>
-        Мы проводим занятия один раз в неделю по выходным с октября по апрель.
-      </p>
-      <p>Для школьников с 3 по 10 класс</p>
-      <button>Открыта запись</button>
+    <h2 id="program">Программирование для детей</h2>
+    <p>Обучающий центр на базе ВолгГТУ.</p>
+    <p>
+      Мы проводим занятия один раз в неделю по выходным с октября по апрель.
+    </p>
+    <p>Для школьников с 3 по 10 класс</p>
+    <button>Открыта запись</button>
 
-      <h2 id="program">Программирование для детей</h2>
-      <p>Обучающий центр на базе ВолгГТУ.</p>
-      <p>
-        Мы проводим занятия один раз в неделю по выходным с октября по апрель.
-      </p>
-      <p>Для школьников с 3 по 10 класс</p>
-      <button>Открыта запись</button>
+    <h2 id="program">Программирование для детей</h2>
+    <p>Обучающий центр на базе ВолгГТУ.</p>
+    <p>
+      Мы проводим занятия один раз в неделю по выходным с октября по апрель.
+    </p>
+    <p>Для школьников с 3 по 10 класс</p>
+    <button>Открыта запись</button>
 
-      <h2 id="program">Программирование для детей</h2>
-      <p>Обучающий центр на базе ВолгГТУ.</p>
-      <p>
-        Мы проводим занятия один раз в неделю по выходным с октября по апрель.
-      </p>
-      <p>Для школьников с 3 по 10 класс</p>
-      <button>Открыта запись</button>
+    <h2 id="program">Программирование для детей</h2>
+    <p>Обучающий центр на базе ВолгГТУ.</p>
+    <p>
+      Мы проводим занятия один раз в неделю по выходным с октября по апрель.
+    </p>
+    <p>Для школьников с 3 по 10 класс</p>
+    <button>Открыта запись</button>
 
-      <h2 id="program">Программирование для детей</h2>
-      <p>Обучающий центр на базе ВолгГТУ.</p>
-      <p>
-        Мы проводим занятия один раз в неделю по выходным с октября по апрель.
-      </p>
-      <p>Для школьников с 3 по 10 класс</p>
-      <button>Открыта запись</button>
+    <h2 id="program">Программирование для детей</h2>
+    <p>Обучающий центр на базе ВолгГТУ.</p>
+    <p>
+      Мы проводим занятия один раз в неделю по выходным с октября по апрель.
+    </p>
+    <p>Для школьников с 3 по 10 класс</p>
+    <button>Открыта запись</button>
 
-      <h2 id="program">Программирование для детей</h2>
-      <p>Обучающий центр на базе ВолгГТУ.</p>
-      <p>
-        Мы проводим занятия один раз в неделю по выходным с октября по апрель.
-      </p>
-      <p>Для школьников с 3 по 10 класс</p>
-      <button>Открыта запись</button>
-    </div>
-    <script src="script.js"></script>
-  </body>
+    <h2 id="program">Программирование для детей</h2>
+    <p>Обучающий центр на базе ВолгГТУ.</p>
+    <p>
+      Мы проводим занятия один раз в неделю по выходным с октября по апрель.
+    </p>
+    <p>Для школьников с 3 по 10 класс</p>
+    <button>Открыта запись</button>
+  </div>
+
+  <footer>
+    <div id="YMapsID" style="width: 600px; height: 400px"></div>
+    <script>
+      const map = new ymaps3.YMap(document.getElementById('YMapsID'), {
+        location: {
+          center: [37.64, 55.76],
+          zoom: 10
+        }
+      });
+    </script>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
