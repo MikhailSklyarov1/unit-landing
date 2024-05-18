@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://api-maps.yandex.ru/v3/?apikey=7a33ccdb-a504-4f2b-bad9-bf4d85914812&lang=ru_RU"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=7a33ccdb-a504-4f2b-bad9-bf4d85914812" type="text/javascript"></script>
+  <script src="icon_customImage.js" type="text/javascript"></script>
   <title>Обучающий Центр Юнит</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -45,61 +46,25 @@
       Мы проводим занятия один раз в неделю по выходным с октября по апрель.
     </p>
     <p>Для школьников с 3 по 10 класс</p>
-    <button>Открыта запись</button>
+    
 
-    <h2 id="program">Программирование для детей</h2>
-    <p>Обучающий центр на базе ВолгГТУ.</p>
-    <p>
-      Мы проводим занятия один раз в неделю по выходным с октября по апрель.
-    </p>
-    <p>Для школьников с 3 по 10 класс</p>
-    <button>Открыта запись</button>
+    <div class="actions-btn">
+      <div>
+      <p class="actions-text">ОТКРЫТА ЗАПИСЬ <br/> на 2023-2024 учебный год</p>
+      
+      <div class="btn-container"><button>ЗАПИСАТЬСЯ</button><button class="question">ЗАДАТЬ ВОПРОС</button></div>
+    </div>
+    </div>
 
-    <h2 id="program">Программирование для детей</h2>
-    <p>Обучающий центр на базе ВолгГТУ.</p>
-    <p>
-      Мы проводим занятия один раз в неделю по выходным с октября по апрель.
-    </p>
-    <p>Для школьников с 3 по 10 класс</p>
-    <button>Открыта запись</button>
 
-    <h2 id="program">Программирование для детей</h2>
-    <p>Обучающий центр на базе ВолгГТУ.</p>
-    <p>
-      Мы проводим занятия один раз в неделю по выходным с октября по апрель.
-    </p>
-    <p>Для школьников с 3 по 10 класс</p>
-    <button>Открыта запись</button>
-
-    <h2 id="program">Программирование для детей</h2>
-    <p>Обучающий центр на базе ВолгГТУ.</p>
-    <p>
-      Мы проводим занятия один раз в неделю по выходным с октября по апрель.
-    </p>
-    <p>Для школьников с 3 по 10 класс</p>
-    <button>Открыта запись</button>
-
-    <h2 id="program">Программирование для детей</h2>
-    <p>Обучающий центр на базе ВолгГТУ.</p>
-    <p>
-      Мы проводим занятия один раз в неделю по выходным с октября по апрель.
-    </p>
-    <p>Для школьников с 3 по 10 класс</p>
-    <button>Открыта запись</button>
+    <div id="map" style="width: 100%; height: 200px"></div>
   </div>
 
-  <footer>
-    <div id="YMapsID" style="width: 600px; height: 400px"></div>
-    <script>
-      const map = new ymaps3.YMap(document.getElementById('YMapsID'), {
-        location: {
-          center: [37.64, 55.76],
-          zoom: 10
-        }
-      });
-    </script>
-  </footer>
+    
+
+
   <script src="script.js"></script>
+  
 </body>
 
 </html>
