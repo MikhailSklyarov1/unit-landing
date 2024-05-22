@@ -62,7 +62,6 @@ header nav ul li a {
 }
 
 .main-content {
-    padding: 20px;
     background: white;
     color: black;
 }
@@ -172,4 +171,9 @@ header nav ul li a {
 .question {
     background-color: white !important;
     color: #eb7c59 !important;
+}
+
+
+.padding20 {
+    padding: 20px;
 }
