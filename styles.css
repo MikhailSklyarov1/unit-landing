@@ -287,13 +287,13 @@ header nav ul li a {
 
 
 
-.dloadblock {
+.dload-block {
   display: flex;
   justify-content: center;
   color: black;
 }
 
-.dloadlinkdownload {
+.dload-link-download {
   display: flex;
    text-align: center; 
    align-items:center;
@@ -301,7 +301,7 @@ header nav ul li a {
 }
 
 
-.newlink>a>div{
+.dload-link-style>a>div{
 margin-left:4px ;
 text-decoration:none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
 display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
@@ -309,7 +309,7 @@ line-height: 1; /*Задаём высоту строки (можно в пикс
 color:black;/*Задаём цвет ссылки*/
 }
 
-.newlink>a>div:after {
+.dload-link-style>a>div:after {
 display: block; /*превращаем его в блочный элемент*/
 content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
 height: 1px; /*задаём высоту линии*/
@@ -318,7 +318,7 @@ background-color: orange ; /*цвет фона элемента*/
 text-decoration: underline;
 }
 
-.newlink>a>div:hover:after,
-.newlink>a>div:focus:after {
+.dload-link-style>a>div:hover:after,
+.dload-link-style>a>div:focus:after {
 width: 100%;
 }
