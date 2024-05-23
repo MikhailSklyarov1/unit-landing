@@ -284,3 +284,41 @@ header nav ul li a {
   text-align: center;
   margin-top: 20px;
 }
+
+
+
+.dloadblock {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.dloadlinkdownload {
+  display: flex;
+   text-align: center; 
+   align-items:center;
+   text-decoration: none;
+}
+
+
+.newlink>a>div{
+margin-left:4px ;
+text-decoration:none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
+line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+color:black;/*Задаём цвет ссылки*/
+}
+
+.newlink>a>div:after {
+display: block; /*превращаем его в блочный элемент*/
+content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+height: 1px; /*задаём высоту линии*/
+width: 0%; /*задаём начальную ширину элемента (линии)*/
+background-color: orange ; /*цвет фона элемента*/
+text-decoration: underline;
+}
+
+.newlink>a>div:hover:after,
+.newlink>a>div:focus:after {
+width: 100%;
+}
