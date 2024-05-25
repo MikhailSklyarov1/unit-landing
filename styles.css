@@ -286,12 +286,6 @@ header nav ul li a {
   margin-top: 20px;
 }
 
-
-
-
-
-
-
 .map-and-description {
   display: flex;
   justify-content: space-between;
@@ -329,4 +323,40 @@ header nav ul li a {
     text-align: center;
     padding: 20px;
   }
+}
+
+.dload-block {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.dload-link-download {
+  display: flex;
+   text-align: center; 
+   align-items:center;
+   text-decoration: none;
+}
+
+
+.dload-link-style>a>div{
+margin-left:4px ;
+text-decoration:none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
+line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+color:black;/*Задаём цвет ссылки*/
+}
+
+.dload-link-style>a>div:after {
+display: block; /*превращаем его в блочный элемент*/
+content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+height: 1px; /*задаём высоту линии*/
+width: 0%; /*задаём начальную ширину элемента (линии)*/
+background-color: orange ; /*цвет фона элемента*/
+text-decoration: underline;
+}
+
+.dload-link-style>a>div:hover:after,
+.dload-link-style>a>div:focus:after {
+width: 100%;
 }
