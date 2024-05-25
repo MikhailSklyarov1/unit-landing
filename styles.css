@@ -289,7 +289,6 @@ header nav ul li a {
 .map-and-description {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
   background-color: #777;
 }
 
