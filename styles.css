@@ -359,3 +359,22 @@ text-decoration: underline;
 .dload-link-style>a>div:focus:after {
 width: 100%;
 }
+
+
+.img-programm {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  width: 50%;
+}
+
+.t-text_md {
+line-height: 1.55;
+}
+
+.block-container-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Если содержимое вертикально */
+  
+}
