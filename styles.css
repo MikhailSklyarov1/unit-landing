@@ -411,3 +411,22 @@ width: 100%;
   display: flex;
   justify-content: center;
 }
+
+
+.img-programm {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  width: 50%;
+}
+
+.t-text_md {
+line-height: 1.55;
+}
+
+.block-container-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Если содержимое вертикально */
+  
+}
