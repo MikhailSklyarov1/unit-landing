@@ -47,6 +47,19 @@ header nav ul li a {
   /*margin-top: 60px; */
 }
 
+.hero-section2 {
+  position: relative;
+  height: 70vh;
+  background: url("3poster.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*margin-top: 60px; */
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -54,12 +67,20 @@ header nav ul li a {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
 }
 
 .content {
   position: relative;
   z-index: 2;
   margin-top: 180px;
+}
+
+.content-section2 {
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
 }
 
 .main-content {
@@ -360,68 +381,33 @@ text-decoration: underline;
 width: 100%;
 }
 
-.ac-container {
- width: 900px !important;
+
+.section-container {
+  background-color: white;
+  color: black;
+  width: 50%;
+  height: 400px;
+  margin-top: 160px;
 }
 
-.ac-container label {
-  padding: 5px 20px;
-  position: relative;
-  z-index: 20;
-  display: block;
-  height: 30px;
-  cursor: pointer;
-  color: #000000;
+@media (max-width: 767px) {
+
+  .section-container {
+    background-color: white;
+    color: black;
+    width: 90%;
+    height: 400px;
+    margin-top: 160px;
+  }
 }
 
-.ac-container {
-  width: 100%;
-  margin: 10px auto 30px auto;
+.delimiter {
+  background-color:#555;
+  height: 3px;
+  width: 50px;
 }
 
-.ac-container label:hover:after,.ac-container input:checked + label:hover:after {
-  content: '+';
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  right: 13px;
-  
-}
-
-.ac-container input {
-  display: none;
-}
-
-.ac-container article {
-  margin-top: -1px;
-  overflow: hidden;
-  height: 0;
-  position: relative;
-  z-index: 10;
-  transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-}
-
-.ac-container article p {
-  font-style: normal;
-  line-height: 23px;
-  font-size: 10px;
-  padding: 20px;
-  font: normal normal 15px 'Open Sans';
-}
-
-.ac-container input:checked ~ article {
-  transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
-  box-shadow: 0 0 0 1px rgba(155,155,155,0.3);
-}
-
-.ac-container input:checked ~ article.ac-small {
-  height: 140px;
-}
-
-.ac-container input:checked ~ article.ac-medium {
-  height: 180px;
-}
-
-.ac-container input:checked ~ article.ac-large {
-  height: 230px;
+.delimiter-container {
+  display: flex;
+  justify-content: center;
 }
