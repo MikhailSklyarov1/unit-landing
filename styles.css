@@ -359,3 +359,69 @@ text-decoration: underline;
 .dload-link-style>a>div:focus:after {
 width: 100%;
 }
+
+.ac-container {
+ width: 900px !important;
+}
+
+.ac-container label {
+  padding: 5px 20px;
+  position: relative;
+  z-index: 20;
+  display: block;
+  height: 30px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.ac-container {
+  width: 100%;
+  margin: 10px auto 30px auto;
+}
+
+.ac-container label:hover:after,.ac-container input:checked + label:hover:after {
+  content: '+';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 13px;
+  
+}
+
+.ac-container input {
+  display: none;
+}
+
+.ac-container article {
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0;
+  position: relative;
+  z-index: 10;
+  transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+}
+
+.ac-container article p {
+  font-style: normal;
+  line-height: 23px;
+  font-size: 10px;
+  padding: 20px;
+  font: normal normal 15px 'Open Sans';
+}
+
+.ac-container input:checked ~ article {
+  transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+  box-shadow: 0 0 0 1px rgba(155,155,155,0.3);
+}
+
+.ac-container input:checked ~ article.ac-small {
+  height: 140px;
+}
+
+.ac-container input:checked ~ article.ac-medium {
+  height: 180px;
+}
+
+.ac-container input:checked ~ article.ac-large {
+  height: 230px;
+}
