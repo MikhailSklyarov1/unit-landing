@@ -189,6 +189,7 @@ header nav ul li a {
 .question {
   background-color: white;
   color: #eb7c59;
+  width: 50%;
 }
 
 .question:hover {
@@ -198,6 +199,7 @@ header nav ul li a {
 .register {
   background-color: #eb7c59;
   color: white;
+  width: 50%;
 }
 
 .register:hover {
@@ -339,7 +341,7 @@ header nav ul li a {
   }
 
   .description-container {
-    width: 100%;
+    width: 90%;
     text-align: center;
     padding: 20px;
   }
@@ -434,3 +436,32 @@ line-height: 1.55;
   font-size: 28px;
   font-weight: 50;
 }
+
+@media (max-width: 767px) {
+  .contact-body {
+    display: block;
+  }
+  .contact-body {
+    width: 400px;
+  }
+  .contact-container {
+    width: 400px;
+    padding: 0;
+  }
+  .contact-form {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .contact-info {
+    width: 100%;
+  }
+
+  .btn-container button {
+    width: 40%;
+  }
+}
+
+
+/* *{
+  outline: 2px solid red !important;
+} */
