@@ -323,9 +323,7 @@ header nav ul li a {
 .description-container {
   width: 45%;
   color: white;
-  
 }
-
 
 @media (max-width: 767px) {
   .map-and-description {
@@ -355,34 +353,32 @@ header nav ul li a {
 
 .dload-link-download {
   display: flex;
-   text-align: center; 
-   align-items:center;
-   text-decoration: none;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
 }
 
-
-.dload-link-style>a>div{
-margin-left:4px ;
-text-decoration:none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
-display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
-line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
-color:black;/*Задаём цвет ссылки*/
+.dload-link-style > a > div {
+  margin-left: 4px;
+  text-decoration: none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+  display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
+  line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+  color: black; /*Задаём цвет ссылки*/
 }
 
-.dload-link-style>a>div:after {
-display: block; /*превращаем его в блочный элемент*/
-content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
-height: 1px; /*задаём высоту линии*/
-width: 0%; /*задаём начальную ширину элемента (линии)*/
-background-color: orange ; /*цвет фона элемента*/
-text-decoration: underline;
+.dload-link-style > a > div:after {
+  display: block; /*превращаем его в блочный элемент*/
+  content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+  height: 1px; /*задаём высоту линии*/
+  width: 0%; /*задаём начальную ширину элемента (линии)*/
+  background-color: orange; /*цвет фона элемента*/
+  text-decoration: underline;
 }
 
-.dload-link-style>a>div:hover:after,
-.dload-link-style>a>div:focus:after {
-width: 100%;
+.dload-link-style > a > div:hover:after,
+.dload-link-style > a > div:focus:after {
+  width: 100%;
 }
-
 
 .section-container {
   background-color: white;
@@ -393,7 +389,6 @@ width: 100%;
 }
 
 @media (max-width: 767px) {
-
   .section-container {
     background-color: white;
     color: black;
@@ -404,7 +399,7 @@ width: 100%;
 }
 
 .delimiter {
-  background-color:#555;
+  background-color: #555;
   height: 3px;
   width: 50px;
 }
@@ -414,7 +409,6 @@ width: 100%;
   justify-content: center;
 }
 
-
 .img-programm {
   overflow-clip-margin: content-box;
   overflow: clip;
@@ -422,10 +416,10 @@ width: 100%;
 }
 
 .t-text_md {
-line-height: 1.55;
+  line-height: 1.55;
 }
 
-.block-container-text{
+.block-container-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -461,7 +455,86 @@ line-height: 1.55;
   }
 }
 
-
 /* *{
   outline: 2px solid red !important;
 } */
+
+.accordion {
+  margin: auto;
+  width: 400px;
+}
+.accordion input {
+  display: none;
+}
+.box {
+  position: relative;
+  background: white;
+  height: 64px;
+  transition: all 0.15s ease-in-out;
+}
+.box::before {
+  content: "+";
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.box-title {
+  width: calc(100% - 40px);
+  height: 64px;
+  line-height: 64px;
+  padding: 0 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+.box-content {
+  width: calc(100% - 40px);
+  padding: 30px 20px;
+  font-size: 11pt;
+  color: rgba(0, 0, 0, 0.54);
+  display: none;
+}
+.box-close {
+  position: absolute;
+  height: 64px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+input:checked + .box {
+  height: auto;
+  margin: 16px 0;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.32);
+}
+input:checked + .box .box-title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+}
+input:checked + .box .box-content,
+input:checked + .box .box-close {
+  display: inline-block;
+}
+.arrows section .box-title {
+  padding-left: 44px;
+  width: calc(100% - 64px);
+}
+.arrows section .box-title:before {
+  position: absolute;
+  display: block;
+  content: "\203a";
+  font-size: 18pt;
+  left: 20px;
+  top: -2px;
+  transition: transform 0.15s ease-in-out;
+  color: rgba(0, 0, 0, 0.54);
+}
+input:checked + section.box .box-title:before {
+  transform: rotate(90deg);
+}
