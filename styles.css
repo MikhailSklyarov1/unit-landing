@@ -313,6 +313,12 @@ header nav ul li a {
   background-color: #777;
 }
 
+.map-and-description2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #777;
+}
+
 .map-container {
   width: 50%;
   height: 300px;
@@ -329,8 +335,13 @@ header nav ul li a {
   .map-and-description {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
   }
+
+  .map-and-description2 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
 
   .map-container {
     width: 100%;
@@ -341,7 +352,7 @@ header nav ul li a {
   .description-container {
     width: 100%;
     text-align: center;
-    padding: 20px;
+    margin-top: 9%;
   }
 }
 
@@ -414,9 +425,10 @@ width: 100%;
 
 
 .img-programm {
+  width: 75%;
+
   overflow-clip-margin: content-box;
   overflow: clip;
-  width: 50%;
 }
 
 .t-text_md {
@@ -466,14 +478,15 @@ margin:0% 1%;
 
 @media (max-width:720px){
 .footer{
-text-align:left;
+text-align:top;
 padding:5%;
 }
 .footer .row ul li{
-margin:10px 0px;
+margin:12px 0px;
 text-align:left;
 }
 .footer .row a i{
 margin:0% 3%;
 }
 }
+
