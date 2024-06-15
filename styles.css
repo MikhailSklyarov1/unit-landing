@@ -351,6 +351,7 @@ header nav ul li a {
     height: 200px;
     margin-bottom: 20px;
     padding-right: 0px;
+    margin-right: 3px;
   }
 
   .description-container {
