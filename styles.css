@@ -37,7 +37,7 @@ header nav ul li a {
 .hero-section {
   position: relative;
   height: 70vh;
-  background: url("2poster.jpg") no-repeat center center/cover;
+  background: url("images/2poster.jpg") no-repeat center center/cover;
   background-attachment: fixed;
   color: white;
   text-align: center;
@@ -50,7 +50,7 @@ header nav ul li a {
 .hero-section2 {
   position: relative;
   height: 70vh;
-  background: url("3poster.jpg") no-repeat center center/cover;
+  background: url("images/3poster.jpg") no-repeat center center/cover;
   background-attachment: fixed;
   color: white;
   text-align: center;
@@ -324,6 +324,7 @@ header nav ul li a {
 .map-container {
   width: 50%;
   height: 300px;
+  padding-right: 1px;
 }
 
 .description-container {
