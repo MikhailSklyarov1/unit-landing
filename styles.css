@@ -484,11 +484,7 @@ header nav ul li a {
   text-align: left;
   border: none;
   outline: none;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc;
+  
 }
 
 .panel {
@@ -496,7 +492,55 @@ header nav ul li a {
   background-color: white;
   display: none;
   overflow: hidden;
+  padding: 0 32px;
+  font-size: 18px;
+  margin-bottom: -50px;
 }
+
+.accordion::after {
+  position: absolute;
+  right: 24px;
+  top: 15px;
+  content: "+";
+  display: block;
+  width: 14px;
+}
+
+.accordion[open]::after {
+  transform: rotate(45deg);
+}
+
+.accordion[open] {
+  padding-bottom: 100px;
+}
+
+.accordion[open] .accordion__title {
+  margin-bottom: 32px;
+}
+
+.accordion__title {
+  background: #fff;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 20px;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+  transition: .3s;
+}
+
+.accordion__title::-webkit-accordion-marker {
+  display: none;
+}
+
+.panel p:last-child {
+  margin-bottom: 0;
+}
+.panel p:first-child {
+  margin-top: 0;
+}
+
+
 
 
 
