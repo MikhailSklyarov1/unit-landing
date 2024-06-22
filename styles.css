@@ -330,9 +330,7 @@ header nav ul li a {
 .description-container {
   width: 45%;
   color: white;
-  
 }
-
 
 @media (max-width: 767px) {
   .map-and-description {
@@ -344,7 +342,6 @@ header nav ul li a {
     flex-direction: column-reverse;
     align-items: center;
   }
-
 
   .map-container {
     width: 100%;
@@ -369,34 +366,32 @@ header nav ul li a {
 
 .dload-link-download {
   display: flex;
-   text-align: center; 
-   align-items:center;
-   text-decoration: none;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
 }
 
-
-.dload-link-style>a>div{
-margin-left:4px ;
-text-decoration:none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
-display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
-line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
-color:black;/*Задаём цвет ссылки*/
+.dload-link-style > a > div {
+  margin-left: 4px;
+  text-decoration: none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+  display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
+  line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+  color: black; /*Задаём цвет ссылки*/
 }
 
-.dload-link-style>a>div:after {
-display: block; /*превращаем его в блочный элемент*/
-content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
-height: 1px; /*задаём высоту линии*/
-width: 0%; /*задаём начальную ширину элемента (линии)*/
-background-color: orange ; /*цвет фона элемента*/
-text-decoration: underline;
+.dload-link-style > a > div:after {
+  display: block; /*превращаем его в блочный элемент*/
+  content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+  height: 1px; /*задаём высоту линии*/
+  width: 0%; /*задаём начальную ширину элемента (линии)*/
+  background-color: orange; /*цвет фона элемента*/
+  text-decoration: underline;
 }
 
-.dload-link-style>a>div:hover:after,
-.dload-link-style>a>div:focus:after {
-width: 100%;
+.dload-link-style > a > div:hover:after,
+.dload-link-style > a > div:focus:after {
+  width: 100%;
 }
-
 
 .section-container {
   background-color: white;
@@ -407,7 +402,6 @@ width: 100%;
 }
 
 @media (max-width: 767px) {
-
   .section-container {
     background-color: white;
     color: black;
@@ -418,7 +412,7 @@ width: 100%;
 }
 
 .delimiter {
-  background-color:#555;
+  background-color: #555;
   height: 3px;
   width: 50px;
 }
@@ -428,7 +422,6 @@ width: 100%;
   justify-content: center;
 }
 
-
 .img-programm {
   width: 75%;
 
@@ -437,10 +430,10 @@ width: 100%;
 }
 
 .t-text_md {
-line-height: 1.55;
+  line-height: 1.55;
 }
 
-.block-container-text{
+.block-container-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -476,55 +469,63 @@ line-height: 1.55;
   }
 }
 
-
 /* *{
   outline: 2px solid red !important;
 } */
 
-
-.footer{
-background:#000;
-font-family: 'Play', sans-serif;
-text-align:center;
+.footer {
+  background: #000;
+  font-family: "Play", sans-serif;
+  text-align: center;
 }
 
-.footer .row{
-width:100%;
-padding:0.6% 0%;
-color:gray;
-font-size:0.8em;
+.footer .row {
+  width: 100%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
 }
 
-.footer .row a{
-color:gray;
-transition:0.5s;
+.footer .row a {
+  color: gray;
+  transition: 0.5s;
 }
 
-.footer .row a:hover{
-color:#fff;
+.footer .row a:hover {
+  color: #fff;
 }
 
-.footer .row ul li{
-display:inline-block;
-margin:0px 30px;
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
 }
 
-.footer .row a i{
-font-size:2em;
-margin:0% 1%;
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
 }
 
-@media (max-width:720px){
-.footer{
-text-align:top;
-padding:5%;
-}
-.footer .row ul li{
-margin:12px 0px;
-text-align:left;
-}
-.footer .row a i{
-margin:0% 3%;
-}
+@media (max-width: 720px) {
+  .footer {
+    text-align: top;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    margin: 12px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
 }
 
+.training-program-picture {
+  text-align: center; 
+  width: 60%;
+}
+
+@media (max-width: 720px) {
+  .training-program-picture {
+    width: 100%;
+  }
+}
