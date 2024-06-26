@@ -509,6 +509,7 @@ header nav ul li a {
 
 .accordion[open]::after {
   transform: rotate(45deg);
+  
 }
 
 .accordion[open] {
@@ -527,7 +528,7 @@ header nav ul li a {
   cursor: pointer;
   list-style: none;
   font-weight: 700;
-  transition: .3s;
+  
 }
 
 
