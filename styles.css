@@ -490,11 +490,12 @@ header nav ul li a {
 }
 
 .panel {
-  text-align: center;
+  text-align: left;
   background-color: white;
   display: none;
   overflow: hidden;
   border-bottom: #d6cdcd solid 1px;
+  width: 800px;
   
 }
 
