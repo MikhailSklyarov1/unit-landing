@@ -14,7 +14,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 });
 
 async function sendDataToServer(phoneNumber, username, comment) {
-  const url = 'http://localhost:3000/'; // URL вашего сервера
+  const url = 'http://unit-vlg.ru:3333/'; // URL вашего сервера
 
   // Данные, которые будут отправлены на сервер
   const data = {

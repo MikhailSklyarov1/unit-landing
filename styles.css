@@ -354,7 +354,7 @@ header nav ul li a {
   .description-container {
     width: 90%;
     text-align: center;
-    margin-top: 9%;
+    margin-top: 20%;
   }
 }
 
@@ -461,11 +461,21 @@ header nav ul li a {
     margin-top: 30px;
   }
   .contact-info {
-    width: 100%;
+    width: 90%;
+    padding-left: 10%;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
   }
 
   .btn-container button {
     width: 40%;
+  }
+
+  #contactForm {
+    width: 80%;
   }
 }
 
